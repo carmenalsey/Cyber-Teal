@@ -1,0 +1,56 @@
+
+/* Cyber Teal — cinematic showcase, horizontal library and full-width watch screen. */
+body.cyber-home,body.cyber-watch{--bg:#071719;--header:#0b1d20;--card:#102a2d;--text:#eafff9;--text2:#93b9b5;--line:#204447;--search:#10292d;--yellow:#00e5c0;background:radial-gradient(ellipse at 70% -10%,#17484b 0,transparent 42%),#071719;color:#eafff9}
+.cyber-home .topbar,.cyber-watch .topbar{background:#0a1d20;border-bottom:1px solid #245357;height:auto;min-height:76px;padding:12px clamp(18px,4vw,72px);gap:25px}
+.cyber-home .logo,.cyber-watch .logo{flex-shrink:0}
+.cyber-home .category-bar{flex:1;min-width:0}
+.cyber-home .category-filters{gap:7px}
+.cyber-home .category-filters button,.cyber-home .category-dropdown{background:#123236!important;border:1px solid #276267!important;color:#ccf9ef!important;border-radius:999px!important}
+.cyber-home .category-filters button.active{background:#00c9a8!important;color:#06221d!important}
+.cyber-home .search-box input,.cyber-watch .search-box input{border:1px solid #276267;background:#0c292c;color:#fff;border-radius:10px}
+.cyber-stage{max-width:1600px;margin:28px auto 0;padding:25px clamp(20px,4vw,70px) 45px;min-height:250px;position:relative;overflow:hidden;border-radius:20px;background:linear-gradient(110deg,#0d3437,#071719 72%);border:1px solid #205357}
+.cyber-stage:after{content:"▶";position:absolute;right:7%;top:18%;font-size:145px;line-height:1;color:#00e5c014;text-shadow:0 0 100px #00e5c033;transform:rotate(-9deg)}
+.cyber-stage-top{display:flex;justify-content:space-between;gap:15px;font-size:11px;letter-spacing:.2em;color:#9ddfd6;font-weight:800}
+.cyber-live{color:#20f3ca}.cyber-stage-copy{position:relative;z-index:1;margin-top:30px}
+.cyber-stage h1{font-size:clamp(33px,5vw,68px);letter-spacing:-.055em;line-height:1.05;max-width:800px}
+.cyber-stage h1 em{color:#20e8c5;font-style:normal}
+.cyber-stage p{color:#9fc8c4;margin-top:14px;font-size:15px}
+.cyber-library-label{max-width:1600px;margin:32px auto 16px;padding:0 clamp(20px,4vw,70px);display:grid;grid-template-columns:1fr auto;gap:4px;align-items:end}
+.cyber-library-label span{grid-column:1/-1;color:#37dfc5;font-size:11px;letter-spacing:.17em;font-weight:800}
+.cyber-library-label h2{font-size:28px;letter-spacing:-.03em}
+.cyber-library-label p{color:#8fbab5;font-size:13px}
+.cyber-home .container{max-width:1600px;padding:0 clamp(20px,4vw,70px) 70px}
+.cyber-home .video-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:18px}
+.cyber-home .video-grid>.video-card:first-child{grid-column:span 2;grid-row:span 2;background:#103539}
+.cyber-home .video-card{background:#10272b;border:1px solid #1c4145;border-radius:14px;overflow:hidden;transition:transform .2s,border-color .2s}
+.cyber-home .video-card:hover{transform:translateY(-3px);border-color:#00e5c0}
+.cyber-home .thumb-box{border-radius:0;aspect-ratio:16/9;background:#0b2325}
+.cyber-home .video-grid>.video-card:first-child .thumb-box{aspect-ratio:16/11}
+.cyber-home .meta{margin:0;padding:13px}
+.cyber-home .video-grid>.video-card:first-child .title{font-size:clamp(17px,2vw,24px);min-height:0}
+.cyber-home .title{color:#f1fffb}
+.cyber-home .views{color:#9dbfbc}
+.cyber-home .video-pagination button{background:#103439!important;border:1px solid #2b6869!important;border-radius:10px!important}
+.cyber-watch-head{max-width:1400px;margin:25px auto 12px;padding:0 24px;display:flex;justify-content:space-between;gap:12px;font-size:11px;letter-spacing:.13em;color:#8bc9c0}
+.cyber-watch-head a{color:#19e0bf;text-decoration:none;font-weight:800}
+.cyber-watch .watch-page{display:flex;flex-direction:column;max-width:1400px;padding:0 24px 70px;gap:30px}
+.cyber-watch .player-section{display:grid;grid-template-columns:1fr auto;gap:0 20px;min-width:0}
+.cyber-watch .player-box{grid-column:1/-1;border-radius:20px;box-shadow:0 30px 70px #0009;border:1px solid #2b6769;max-height:760px}
+.cyber-watch .video-info{grid-column:1;grid-row:2;background:#0d2b2f;border:1px solid #265558;padding:20px 24px;border-radius:0 0 0 16px;margin-top:0}
+.cyber-watch .video-toolbar{grid-column:2;grid-row:2;align-self:stretch;align-items:center;display:flex;background:#0d2b2f;border:1px solid #265558;border-left:0;border-radius:0 0 16px 0;padding:12px 16px;margin-top:0}
+.cyber-watch .tool-btn{border:1px solid #286565;border-radius:9px;background:#174044;color:#eafff9}
+.cyber-watch .tool-btn.active{background:#00e5c0;color:#04241f}
+.cyber-watch .related-section{grid-column:1/-1;margin-top:34px}
+.cyber-watch .related-heading,.cyber-watch .sidebar-heading{font-size:23px;letter-spacing:-.03em;margin-bottom:17px;color:#e8fff9}
+.cyber-watch .sidebar-section{width:100%;border-top:1px solid #235558;padding-top:25px}
+.cyber-watch .sidebar-list{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px}
+.cyber-watch .side-card{display:block;border:1px solid #21484b;background:#0e292c;border-radius:12px;padding:0;overflow:hidden}
+.cyber-watch .side-thumb-box{width:100%;aspect-ratio:16/9;border-radius:0}
+.cyber-watch .side-meta{padding:12px}
+.cyber-watch .side-card:hover{background:#17383b}
+.cyber-watch .spinner{border-top-color:#00e5c0}
+@media(max-width:1100px){.cyber-home .video-grid{grid-template-columns:repeat(3,minmax(0,1fr))}.cyber-watch .sidebar-list{grid-template-columns:repeat(3,minmax(0,1fr))}.cyber-watch .player-section{grid-template-columns:1fr}.cyber-watch .video-info,.cyber-watch .video-toolbar{grid-column:1;border-radius:0;border:1px solid #265558}.cyber-watch .video-toolbar{grid-row:3;border-radius:0 0 14px 14px;border-top:0}.cyber-watch .related-section{grid-row:4}}
+@media(max-width:700px){.cyber-home .topbar,.cyber-watch .topbar{padding:10px 14px}.cyber-stage{margin:12px 12px 0;padding:24px 18px;min-height:220px}.cyber-stage:after{font-size:80px;right:2%;top:32%}.cyber-library-label{padding:0 16px}.cyber-library-label p{display:none}.cyber-home .container{padding:0 12px 50px}.cyber-home .video-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.cyber-home .video-grid>.video-card:first-child{grid-column:1/-1;grid-row:auto}.cyber-home .video-grid>.video-card:first-child .thumb-box{aspect-ratio:16/9}.cyber-home .video-grid>.video-card:first-child .title{font-size:17px}.cyber-watch-head{padding:0 14px}.cyber-watch .watch-page{padding:0 12px 50px}.cyber-watch .sidebar-list{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.cyber-watch .video-toolbar{flex-wrap:wrap}.cyber-watch .video-info{padding:15px}}
+
+/* Video-first layout: no decorative hero or editorial heading. */
+.cyber-home .container.cyber-catalog{padding-top:28px}
